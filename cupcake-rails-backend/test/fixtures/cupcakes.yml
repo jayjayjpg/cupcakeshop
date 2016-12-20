@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  text: MyText
+  thumbnail: MyString
+  rating: 1
+  weight: 1
+
+two:
+  title: MyString
+  text: MyText
+  thumbnail: MyString
+  rating: 1
+  weight: 1
