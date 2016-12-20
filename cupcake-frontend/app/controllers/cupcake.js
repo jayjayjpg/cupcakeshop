@@ -1,4 +1,5 @@
 import Ember from 'ember';
+/* global DS */
 
 export default Ember.Controller.extend({
   summaryRating: Ember.computed('model.@each.ratings', function(){
