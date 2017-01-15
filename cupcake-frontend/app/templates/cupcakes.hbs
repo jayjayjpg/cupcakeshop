@@ -8,20 +8,9 @@
     {{#each model as |cupcake|}}
       <div class="row">
         <div class="col s12">
-          <h2 class="header">{{#link-to 'cupcake' cupcake.id}}{{cupcake.title}}{{/link-to}}</h2>
-          <div class="card horizontal row">
-            <div class="card-image col s4 m2">
-              <img src={{cupcake.thumbnail}}>
-            </div>
-            <div class="card-stacked col s8 m10">
-              <div class="card-content">
-                <p>{{cupcake.text}}</p>
-              </div>
-              <div class="card-action">
-                <a href="#">Rating: {{summaryRating}}</a>
-              </div>
-            </div>
-          </div>
+          {{#cupcake-panel cupcakeData=cupcake}}
+            {{rating-widget ratings=cupcake.ratings alreadyRated=cupcake.hasRatings summary=cupcake.summaryRating}}
+          {{/cupcake-panel}}
         </div>
       </div>
     {{/each}}

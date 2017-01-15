@@ -1,0 +1,15 @@
+<h2 class="header">{{#link-to 'cupcake' cupcakeData.id}}{{cupcakeData.title}}{{/link-to}}</h2>
+<div class="card horizontal row">
+  <div class="card-image col s4 m2">
+    <img src={{cupcakeData.thumbnail}}>
+  </div>
+  <div class="card-stacked col s8 m10">
+    <div class="card-content">
+      <p>{{cupcakeData.text}}</p>
+    </div>
+    <div class="card-action">
+    {{yield}}
+    </div>
+  </div>
+</div>
+
